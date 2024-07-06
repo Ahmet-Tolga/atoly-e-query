@@ -16,9 +16,4 @@ export class AppController {
   async test(){
     return await "This is a test of microservice";
   }
-
-  @MessagePattern("create-mock-data")
-  async createMockData(){
-    return await this.appService.createMockData();
-  }
 }
